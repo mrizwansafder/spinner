@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-///
         val spinnerList = listOf("apple🍎", "Banan🍌", "Orange🍊", "Grape🍇", "kiwi🥝")
         val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, spinnerList)
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
