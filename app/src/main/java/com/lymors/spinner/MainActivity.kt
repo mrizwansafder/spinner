@@ -22,10 +22,7 @@ class MainActivity : AppCompatActivity() {
         spinner.adapter = arrayAdapter
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long) {
+                parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val selecetedItem = parent?.getItemAtPosition(position).toString()
                 Toast.makeText(this@MainActivity, "you selected $selecetedItem", Toast.LENGTH_LONG).show() }
             override fun onNothingSelected(parent: AdapterView<*>?) {} } } }
